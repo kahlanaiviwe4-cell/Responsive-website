@@ -1,0 +1,32 @@
+function initializeGallery() {
+  console.log("Page loaded: initializeGallery function triggered.");
+  let images = document.querySelectorAll(".preview");
+
+  for (let i = 0; i < images.length; i++) {
+    images[i].setAttribute("tabindex", "0");
+  }
+}
+
+function upDate(previewPic) {
+  let imageDiv = document.getElementById("image");
+  imageDiv.innerHTML = previewPic.alt;
+  imageYou should upload the **HTML and CSS responsive layout files** (`index.html` and `style.css`) that you just edited and tested in the current workspace.
+
+### 1. `style.css`
+This file contains your base styling along with the two media queries for responsive screen sizes:
+* Base rules defining full width on mobile viewports.
+* Query `#1` (`@media screen and (min-width: 772px)`) setting container width to `45vw` and limiting image heights to `30vh`.
+* Query `#2` (`@media screen and (min-width: 998px)`) setting container width to `30vw` for desktop viewports.
+
+### 2. `index.html`
+This file contains the HTML markup linking to `style.css` in the `<head>` tag and structuring your content blocks (`<header>`, `<main>`, and content `<div>` elements wrapped around your images).
+
+---
+
+### Command to push both files at once:
+Once you configure your email and name in Git, execute:
+
+```bash
+git add index.html style.css
+git commit -m "Upload responsive layout assignment files"
+git push -u origin main
