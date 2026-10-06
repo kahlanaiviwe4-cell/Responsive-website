@@ -1,71 +1,15 @@
-body{
-    font-family: Arial, sans-serif;
-    margin:0;
-    background:#f5f5f5;
-}
-
-/* Skip link */
-.skip-link{
-    position:absolute;
-    left:-9999px;
-}
-
-.skip-link:focus{
-    left:15px;
-    top:15px;
-    background:black;
-    color:white;
-    padding:10px;
-}
-
-/* Navigation */
-.nav{
-    display:flex;
-    justify-content:center;
-    gap:20px;
-    list-style:none;
-    background:navy;
-    padding:20px;
-}
-
-.nav a{
-    color:white;
-    text-decoration:none;
-    padding:10px 15px;
-    border-radius:8px;
-}
-
-/* Hover requirement */
-.nav a:hover{
-    background:orange;
-    transform:scale(1.1);
-    transition:0.3s;
-}
-
-/* Images: Box Model */
-img{
-    width:300px;
-    border:4px solid navy;
-    padding:5px;
-    border-radius:15px;
-}
-
-/* Grid requirement */
-.gallery{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:20px;
-    padding:20px;
-}
-
-/* nth-child requirement */
-.gallery img:nth-child(even){
-    border-radius:50%;
-}
-
-/* Flex requirement */
-.skills{
-    display:flex;
-    justify-content:center;
-    gap:15px;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pick n Cheaper | Cheap Supermarket Cape Town</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Arial,sans-serif;color:#333;background:#f8fdf8}
+header{background:#0a7a0a;color:white;padding:12px 20px;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:100}
+.logo{display:flex;align-items:center;gap:10px;font-weight:900;font-size:1.4rem}
+.logo img{width:40px;height:40px;border-radius:50%;background:white;padding:5px}
+nav a{color:white;text-decoration:none;margin-left:15px;font-weight:bold}
+#cartBtn{background:#ffeb3b;color:#000;padding:6px 12px;border-radius:20px;font-weight:bold;border:none;cursor:pointer}
+.hero{
